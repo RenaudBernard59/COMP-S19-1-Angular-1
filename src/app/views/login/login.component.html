@@ -1,12 +1,12 @@
 <div>
-  <form>
+  <form (ngSubmit)="login()" [FormGroup]="loginForm">
     <div>
       <label for="IdapLogin">Nom d'utilisateur</label>
-      <input type="text" name="IdapLogin" id="IdapLogin" required>
+      <input type="text" name="IdapLogin" id="IdapLogin" formControlName="username" required>
     </div>
     <div>
       <label for="IdapPassword">Mot de passe</label>
-      <input type="text" name="IdapPassword" id="IdaPassword" required>
+      <input type="text" name="IdapPassword" id="IdaPassword" formControlName="password" required>
     </div>
     <button type="submit">Connexion</button>
   </form>
