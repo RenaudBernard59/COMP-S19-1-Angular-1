@@ -6,12 +6,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MoncomposantComponent } from './moncomposant/moncomposant.component';
 import { MaDirectiveDirective } from './ma-directive.directive';
+import { LoginComponent } from './views/login/login.component';
+import { RouterModule } from '@angular/router';
+import { ROUTES } from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoncomposantComponent,
-    MaDirectiveDirective
+    MaDirectiveDirective,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
