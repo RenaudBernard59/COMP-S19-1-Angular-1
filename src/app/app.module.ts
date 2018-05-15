@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { MoncomposantComponent } from './moncomposant/moncomposant.component';
+import { MaDirectiveDirective } from './ma-directive.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MoncomposantComponent,
+    MaDirectiveDirective
   ],
   imports: [
     BrowserModule,
